@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 45%;
+  border-radius: 1.5rem;
+}
+
+.id {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.img {
+  position: relative;
+  bottom: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.img-mobile {
+  width: 85%;
+  max-width: 50rem;
+}
+.img-desktop {
+  display: none;
+}
+
+.advice {
+  color: hsl(193, 38%, 86%);
+  width: 90%;
+}
+.advice__text {
+  letter-spacing: 0.2rem;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.button {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 35%;
+  }
+  .button {
+    cursor: pointer;
+  }
+  .button:active {
+    box-shadow: 0rem 0rem 2rem 0.3rem hsl(150, 100%, 66%);
+  }
+  .img-desktop {
+    display: unset;
+    width: 85%;
+    max-width: 50rem;
+  }
+  .img-mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

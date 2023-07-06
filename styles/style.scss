@@ -1,0 +1,95 @@
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+body{
+    display: flex;
+    align-items: center;
+    background-color: $DarkBlue;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    font-family: 'Manrope', sans-serif;
+    background-color: $DarkGrayishBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 45%;
+    border-radius: 1.5rem;
+}
+
+.id{
+    color: $NeonGreen;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+ 
+}
+.img{
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    &-mobile{
+        width: 85%;
+        max-width: 50rem;
+    }
+    &-desktop{
+        display: none;
+    }
+}
+.advice{
+    color: $LightCyan;
+    width: 90%;
+    &__text{
+        letter-spacing: 0.2rem;
+        font-size: 2.8rem;
+        margin: 0;
+    }
+}
+.button{
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    background-color: $NeonGreen;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+
+
+
+
+@media screen and (min-width:800px){
+    main{
+        width: 35%;
+    }
+    .button{
+        cursor: pointer;
+        &:active{
+            box-shadow: 0rem 0rem 2rem 0.3rem $NeonGreen;
+           }
+    }
+    .img{
+        &-desktop{
+            display:unset;
+            width: 85%;
+            max-width: 50rem;
+        }
+        &-mobile{
+            display: none;
+        }
+    }
+}
+
+
